@@ -1,0 +1,61 @@
+@import "./partials/setup";
+@import "./partials/config";
+@import "./partials/header";
+
+body {
+	color: #000;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-x: hidden;
+}
+
+.background-video-container {
+	display: flex;
+	justify-content: center;
+}
+
+#background-video {
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+	max-width: 430px;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.lloyd-portrait-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	h1 {
+		text-align: center;
+		color: #fff;
+		span {
+			display: block;
+			color: $primary-color;
+		}
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.fade-in {
+	animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
