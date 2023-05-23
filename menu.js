@@ -61,10 +61,10 @@ drinks.forEach((item) => {
 	const li = document.createElement("li");
 	li.innerHTML = `
 	<div class="name-and-price">
-	<p class="item">${item.Name}</p>
-	<p class="price">${item.Price}</p>
+	<p tabindex="0"  class="item">${item.Name}</p>
+	<p tabindex="0"  class="price">${item.Price}</p>
 </div>
-<p class="description">${item.Description}</p>
+<p tabindex="0"  class="description">${item.Description}</p>
 	`;
 	drinksEl.appendChild(li);
 });
@@ -122,10 +122,10 @@ sweet.forEach((item) => {
 	const li = document.createElement("li");
 	li.innerHTML = `
 	<div class="name-and-price">
-	<p class="item">${item.Name}</p>
-	<p class="price">${item.Price}</p>
+	<p tabindex="0"  class="item">${item.Name}</p>
+	<p tabindex="0"  class="price">${item.Price}</p>
 </div>
-<p class="description">${item.Description}</p>
+<p tabindex="0"  class="description">${item.Description}</p>
 	`;
 	sweetEl.appendChild(li);
 });
@@ -163,10 +163,10 @@ salty.forEach((item) => {
 	const li = document.createElement("li");
 	li.innerHTML = `
 	<div class="name-and-price">
-	<p class="item">${item.Name}</p>
-	<p class="price">${item.Price}</p>
+	<p  tabindex="0"  class="item">${item.Name}</p>
+	<p tabindex="0"  class="price">${item.Price}</p>
 </div>
-<p class="description">${item.Description}</p>
+<p tabindex="0"  class="description">${item.Description}</p>
 	`;
 	saltyEl.appendChild(li);
 });
