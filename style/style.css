@@ -355,6 +355,7 @@ body {
   flex-direction: column;
   margin-top: 10rem;
   background-color: rgba(0, 0, 0, 0.6705882353);
+  border-radius: 1rem;
 }
 .lloyd-portrait-container h1,
 .menu-container h1 {
@@ -427,5 +428,41 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+@media (min-width: 446px) {
+  .lloyd-portrait-container,
+  .menu-container {
+    width: 420px;
+  }
+  .lloyd-portrait-container .lloyd-portrait,
+  .menu-container .lloyd-portrait {
+    max-width: 420px;
+  }
+  .lloyd-portrait-container article,
+  .menu-container article {
+    max-width: 400px;
+    padding: 0 20px;
+  }
+  footer {
+    color: #010001;
+  }
+}
+@media (min-width: 768px) {
+  .lloyd-portrait-container,
+  .menu-container {
+    width: 500px;
+  }
+  .lloyd-portrait-container .lloyd-portrait,
+  .menu-container .lloyd-portrait {
+    max-width: 500px;
+  }
+  .lloyd-portrait-container article,
+  .menu-container article {
+    max-width: 460px;
+    padding: 0 20px;
+  }
+  footer {
+    color: #010001;
   }
 }/*# sourceMappingURL=style.css.map */
