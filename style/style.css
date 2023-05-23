@@ -297,7 +297,7 @@ nav ul a {
   text-decoration: none;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 20%;
+  border-radius: 1rem;
 }
 nav ul a:hover {
   background-color: #363636;
@@ -330,7 +330,8 @@ body {
   z-index: -1;
 }
 
-.lloyd-portrait-container {
+.lloyd-portrait-container,
+.menu-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,18 +339,23 @@ body {
   margin-top: 10rem;
   background-color: rgba(0, 0, 0, 0.6705882353);
 }
-.lloyd-portrait-container h1 {
+.lloyd-portrait-container h1,
+.menu-container h1 {
   text-align: center;
   color: #fff;
+  margin: 2rem;
 }
-.lloyd-portrait-container h1 span {
+.lloyd-portrait-container h1 span,
+.menu-container h1 span {
   display: block;
   color: #258132;
 }
-.lloyd-portrait-container .lloyd-portrait {
+.lloyd-portrait-container .lloyd-portrait,
+.menu-container .lloyd-portrait {
   max-width: 320px;
 }
-.lloyd-portrait-container article {
+.lloyd-portrait-container article,
+.menu-container article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,12 +367,29 @@ body {
 
 .menu-container {
   width: 100%;
+  border-radius: 1rem;
 }
 
 .menu-item-container {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.menu-item-container li {
+  list-style: none;
+}
+
+.name-and-price {
   display: flex;
   justify-content: space-between;
-  margin: 0 10px;
+  margin: 0 1rem;
+}
+.name-and-price p {
+  margin: 0;
+}
+
+.description {
+  margin: 0 1.5rem;
+  font-size: 1.5rem;
 }
 
 .hidden {

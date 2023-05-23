@@ -28,7 +28,8 @@ body {
 	z-index: -1;
 }
 
-.lloyd-portrait-container {
+.lloyd-portrait-container,
+.menu-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -39,6 +40,7 @@ body {
 	h1 {
 		text-align: center;
 		color: #fff;
+		margin: 2rem;
 		span {
 			display: block;
 			color: $primary-color;
@@ -62,12 +64,28 @@ body {
 
 .menu-container {
 	width: 100%;
+	border-radius: 1rem;
 }
 
 .menu-item-container {
+	margin-bottom: 1rem;
+	width: 100%;
+	li {
+		list-style: none;
+	}
+}
+
+.name-and-price {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 10px;
+	margin: 0 1rem;
+	p {
+		margin: 0;
+	}
+}
+.description {
+	margin: 0 1.5rem;
+	font-size: 1.5rem;
 }
 
 .hidden {
