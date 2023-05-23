@@ -314,16 +314,32 @@ body {
   overflow-x: hidden;
 }
 
-.background-video-container {
+.background-video-portrait-container {
   display: flex;
   justify-content: center;
 }
 
-#background-video {
+.background-video-landscape-container {
+  display: flex;
+  justify-content: center;
+}
+
+#background-video-portrait {
   position: fixed;
   top: 0;
   margin: 0 auto;
   max-width: 430px;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+#background-video-landscape {
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
   width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
@@ -397,6 +413,10 @@ body {
   opacity: 0;
 }
 
+.hide {
+  display: none;
+}
+
 .fade-in {
   animation: fadeIn 1s;
 }
@@ -407,10 +427,5 @@ body {
   }
   to {
     opacity: 1;
-  }
-}
-@media (min-width: 500px) {
-  .background-video-container {
-    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
