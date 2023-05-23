@@ -276,6 +276,9 @@ header {
   border-radius: 50%;
   max-width: 10rem;
 }
+.lloyds-logo:hover {
+  border: 3px #258132 solid;
+}
 
 nav {
   margin-top: 3rem;
