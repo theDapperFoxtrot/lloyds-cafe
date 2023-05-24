@@ -92,9 +92,14 @@ body {
 }
 
 .name-and-price {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-areas: "item price";
 	margin: 0 1rem;
+
+	.price {
+		text-align: right;
+	}
+
 	p {
 		margin: 0;
 	}
